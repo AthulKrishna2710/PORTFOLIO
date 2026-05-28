@@ -3,3 +3,106 @@
     margin:0;
     box-sizing: border-box;
 }
+
+:root{
+    --hero-head:80px;
+}
+
+#home{
+    width:100%;
+    overflow-x: hidden;
+    height:100vh;
+    background-color: #0f172a;
+    position: relative;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    user-select: none;
+}
+#darkblue{
+    position: absolute;
+    width:400px;
+    height:400px;
+    background-color: #6366f133;
+    left:0;
+    top:250px;
+    border-radius: 50%;
+    filter: blur(90px);
+}
+#lightblue{
+    position: absolute;
+    width:400px;
+    height:400px;
+    background-color: #06b6d433;
+    right:0;
+    bottom:250px;
+    filter: blur(90px);
+    border-radius: 50%;
+}
+#home_head{
+    font-size: var(--hero-head);
+    font-family: 'Inter',  'Segoe UI', sans-serif;
+    font-weight: 700;
+}
+#name{
+    background: linear-gradient(to right,#7c7ee9 ,#81d2e0);
+    color:transparent;
+    background-clip: text;
+}
+#status{
+    font-size: 54px;
+    font-family: 'Inter',  'Segoe UI', sans-serif;
+    color:rgba(255, 255, 255, 0.774)
+}
+#home_para{
+    font-size: 20px;
+    text-align: center;
+    margin:0 30%;
+    line-height: 1.4;
+    font-family: 'Inter',  'Segoe UI', sans-serif;
+    color:rgba(241, 241, 241, 0.651)
+}
+#home_buttons{
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+}
+#viewWork{
+    padding:12px 24px;
+    font-size: 14px;
+    border-radius: 20px;
+    background: linear-gradient(to right,#6c6dca ,#81d2e0);
+    color:white;
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+
+#downloadResume{
+    padding:12px 24px;
+    font-size: 14px;
+    border-radius: 20px;
+    background: transparent;
+    border:2px solid rgb(99, 56, 199);
+    color:white;
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+#links{
+    margin-top: 20px;
+    display: flex;
+    gap:25px;
+}
+.link{
+    background-color: transparent;
+    color:white;
+    backdrop-filter: blur(50px);
+}
